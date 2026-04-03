@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>찜 목록 — DERKERK</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-page="wishlist">
+    <div id="site-header"></div>
+
+    <main class="main container" style="padding-top: 28px; padding-bottom: 64px">
+      <div class="section-head">
+        <h1 class="page-title" style="margin: 0">찜 목록</h1>
+        <a class="link-arrow" href="./shop.html">쇼핑 계속하기 →</a>
+      </div>
+
+      <div id="wishlist-empty" class="empty-state" style="margin-top: 24px" hidden>
+        찜한 상품이 없습니다. 상품 카드에서 「찜」을 눌러 보세요.
+      </div>
+      <div id="wishlist-grid" class="product-grid" style="margin-top: 24px"></div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="./assets/app.js" defer></script>
+  </body>
+</html>

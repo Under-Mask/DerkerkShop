@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>결제 — DERKERK</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-page="checkout">
+    <div id="site-header"></div>
+
+    <main class="main container checkout-grid">
+      <div>
+        <h1 class="page-title">주문 · 배송</h1>
+        <p class="muted">입력 정보는 이 브라우저에만 저장되는 데모 주문에 사용됩니다.</p>
+
+        <form id="checkout-form" class="checkout-card" style="margin-top: 24px">
+          <p class="kicker">받는 사람</p>
+          <div class="form-stack">
+            <div>
+              <label class="label" for="co-name">이름</label>
+              <input class="input" id="co-name" name="name" required autocomplete="name" />
+            </div>
+            <div>
+              <label class="label" for="co-email">이메일</label>
+              <input class="input" id="co-email" name="email" type="email" required autocomplete="email" />
+            </div>
+            <div>
+              <label class="label" for="co-phone">휴대폰</label>
+              <input class="input" id="co-phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div>
+              <label class="label" for="co-addr">주소</label>
+              <textarea class="input" id="co-addr" name="address" rows="3" placeholder="도로명 주소"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 28px">
+            주문 완료 (데모)
+          </button>
+        </form>
+      </div>
+
+      <aside class="checkout-card">
+        <p class="kicker">주문 상품</p>
+        <div id="checkout-summary" style="margin-top: 16px"></div>
+        <p class="muted" style="margin-top: 20px; font-size: 13px">
+          실제 PG(토스) 결제는 서버에서 승인 검증 후 Supabase에 저장하는 구조로 붙입니다.
+        </p>
+      </aside>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="./assets/app.js" defer></script>
+  </body>
+</html>

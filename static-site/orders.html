@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문 내역 — DERKERK</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-page="orders">
+    <div id="site-header"></div>
+
+    <main class="main container orders-page">
+      <h1 class="page-title">주문 내역</h1>
+      <p class="muted">결제(데모) 완료 시 이 기기에만 저장됩니다.</p>
+
+      <div id="order-thanks" class="banner" style="margin-top: 24px" hidden>
+        주문이 접수되었습니다. 아래에서 내역을 확인하세요.
+      </div>
+
+      <div id="orders-list" style="margin-top: 24px"></div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="./assets/app.js" defer></script>
+  </body>
+</html>

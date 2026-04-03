@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품 목록 — DERKERK</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-page="shop">
+    <div id="site-header"></div>
+
+    <main class="main container" style="padding-top: 28px; padding-bottom: 64px">
+      <h1 class="page-title" id="shop-title">전체 상품</h1>
+      <p class="muted" id="shop-sub" style="margin-top: 8px">로딩 중…</p>
+
+      <div
+        class="product-grid"
+        style="margin-top: 28px; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px"
+      >
+        <a class="btn btn-ghost btn-sm" href="./shop.html" style="justify-content: center">전체</a>
+        <a class="btn btn-ghost btn-sm" href="./shop.html?tag=new" style="justify-content: center">신상</a>
+        <a class="btn btn-ghost btn-sm" href="./shop.html?tag=sale" style="justify-content: center">세일</a>
+        <a class="btn btn-ghost btn-sm" href="./shop.html?category=apparel" style="justify-content: center">의류</a>
+        <a class="btn btn-ghost btn-sm" href="./shop.html?category=bags" style="justify-content: center">가방</a>
+        <a class="btn btn-ghost btn-sm" href="./shop.html?category=accessories" style="justify-content: center">액세서리</a>
+        <a class="btn btn-ghost btn-sm" href="./shop.html?category=jewelry" style="justify-content: center">주얼리</a>
+        <a class="btn btn-ghost btn-sm" href="./shop.html?category=living" style="justify-content: center">리빙</a>
+      </div>
+
+      <div id="shop-empty" class="empty-state" style="margin-top: 32px" hidden>
+        조건에 맞는 상품이 없습니다. 검색어나 필터를 바꿔 보세요.
+      </div>
+      <div id="shop-grid" class="product-grid" style="margin-top: 28px"></div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="./assets/app.js" defer></script>
+  </body>
+</html>
