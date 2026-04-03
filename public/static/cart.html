@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERKERK — Cart</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">DERKERK</a>
+        <nav class="nav">
+          <a href="./index.html">Shop</a>
+          <a href="./cart.html">Cart</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="section-title">
+        <h1 class="h2" style="font-size: 26px">Cart</h1>
+        <a class="link-muted" href="./index.html">Continue shopping →</a>
+      </div>
+
+      <div style="margin-top: 16px; display: grid; grid-template-columns: 1fr; gap: 16px">
+        <section class="card card-pad">
+          <div class="stack">
+            <div class="card" style="padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+              <div style="min-width: 0">
+                <div style="font-size: 14px; font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">
+                  MONO TEE
+                </div>
+                <div class="small" style="margin-top: 6px">₩29,000 · 1개</div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px">
+                <button class="btn btn-ghost" type="button" style="height: 36px; padding: 0 12px">−</button>
+                <div style="width: 40px; text-align: center">1</div>
+                <button class="btn btn-ghost" type="button" style="height: 36px; padding: 0 12px">+</button>
+                <button class="btn btn-ghost" type="button" style="height: 36px">Remove</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="card card-pad">
+          <div class="kicker">CHECKOUT</div>
+          <div class="p" style="margin-top: 12px">Subtotal</div>
+          <div style="margin-top: 6px; font-size: 26px; font-weight: 650">₩29,000</div>
+
+          <form class="stack" style="margin-top: 20px">
+            <input class="input" placeholder="이름" required />
+            <input class="input" placeholder="이메일" type="email" required />
+            <input class="input" placeholder="휴대폰 (선택)" />
+            <a class="btn" href="./checkout.html" style="text-align: center; line-height: 44px">Proceed to payment</a>
+            <div class="small">
+              정적 HTML 템플릿이라 실제 결제/주문 저장은 동작하지 않습니다. (나중에 Next + 토스 + Supabase로 연결)
+            </div>
+          </form>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2026 DERKERK</div>
+        <div>Black / White two-tone commerce.</div>
+      </div>
+    </footer>
+  </body>
+</html>
+

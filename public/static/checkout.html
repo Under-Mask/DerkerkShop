@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DERKERK — Checkout</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">DERKERK</a>
+        <nav class="nav">
+          <a href="./index.html">Shop</a>
+          <a href="./cart.html">Cart</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="card card-pad">
+        <div class="kicker">PAYMENT</div>
+        <h1 class="h2" style="margin-top: 12px; font-size: 26px">Checkout</h1>
+        <div class="p" style="margin-top: 10px">주문번호 <span style="color: #fff">dk_demo</span></div>
+        <div class="p" style="margin-top: 8px">결제금액 <span style="color: #fff">₩29,000</span></div>
+      </div>
+
+      <div style="margin-top: 16px; display: grid; grid-template-columns: 1fr; gap: 16px">
+        <section class="card card-pad">
+          <div class="kicker">WIDGET AREA</div>
+          <p class="p">
+            정적 HTML 템플릿에서는 토스 결제위젯이 실제로 렌더링되지 않습니다.
+            나중에 Next.js로 전환하면 여기 영역에 위젯이 붙습니다.
+          </p>
+          <div class="card" style="margin-top: 16px; padding: 18px; border-style: dashed">
+            <div class="small">#payment-methods</div>
+          </div>
+          <div class="card" style="margin-top: 12px; padding: 18px; border-style: dashed">
+            <div class="small">#agreement</div>
+          </div>
+        </section>
+
+        <aside class="card card-pad">
+          <a class="btn" href="./index.html" style="display: block; text-align: center; line-height: 44px">
+            Pay (demo)
+          </a>
+          <p class="small" style="margin-top: 12px">
+            실제 결제 승인/검증은 서버(API) 기능이 필요합니다. (Vercel + Next API Route)
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2026 DERKERK</div>
+        <div>Black / White two-tone commerce.</div>
+      </div>
+    </footer>
+  </body>
+</html>
+
